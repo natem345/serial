@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>serial: Main Page</title>
+<title>serial: include/serial/impl/unix.h File Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -45,10 +45,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -67,13 +67,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
+    </ul>
+  </div>
 </div>
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">serial Documentation</div>  </div>
+<div class="title">include/serial/impl/unix.h File Reference</div>  </div>
 </div>
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="serial_8h_source.html">serial/serial.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for unix.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="unix_8h__incl.png" border="0" usemap="#include_2serial_2impl_2unix_8h" alt=""/></div>
+<map name="include_2serial_2impl_2unix_8h" id="include_2serial_2impl_2unix_8h">
+<area shape="rect" id="node3" href="serial_8h.html" title="serial/serial.h" alt="" coords="179,83,287,111"/></map>
 </div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="unix_8h__dep__incl.png" border="0" usemap="#include_2serial_2impl_2unix_8hdep" alt=""/></div>
+<map name="include_2serial_2impl_2unix_8hdep" id="include_2serial_2impl_2unix_8hdep">
+<area shape="rect" id="node3" href="serial_8cc.html" title="src/serial.cc" alt="" coords="5,83,104,111"/><area shape="rect" id="node5" href="unix_8cc.html" title="src/impl/unix.cc" alt="" coords="128,83,251,111"/></map>
+</div>
+</div>
+<p><a href="unix_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserial_1_1serial_1_1_serial_1_1_serial_impl.html">serial::serial::Serial::SerialImpl</a></td></tr>
+<tr><td colspan="2"><h2><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceserial.html">serial</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><dl class="author"><dt><b>Author:</b></dt><dd>William Woodall &lt;<a href="mailto:wjwwood@gmail.com">wjwwood@gmail.com</a>&gt; </dd>
+<dd>
+John Harrison &lt;<a href="mailto:ash@greaterthaninfinity.com">ash@greaterthaninfinity.com</a>&gt; </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>0.1</dd></dl>
+<h2><a class="anchor" id="LICENSE"></a>
+LICENSE</h2>
+<p>The MIT License</p>
+<p>Copyright (c) 2011 William Woodall</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<h2><a class="anchor" id="DESCRIPTION"></a>
+DESCRIPTION</h2>
+<p>This provides a unix based pimpl for the Serial class. </p>
+</div></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"

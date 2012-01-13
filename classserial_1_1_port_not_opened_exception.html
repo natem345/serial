@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>serial: Main Page</title>
+<title>serial: serial::PortNotOpenedException Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -45,9 +45,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -67,12 +67,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="namespaceserial.html">serial</a>      </li>
+      <li class="navelem"><a class="el" href="classserial_1_1_port_not_opened_exception.html">PortNotOpenedException</a>      </li>
+    </ul>
+  </div>
 </div>
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">serial Documentation</div>  </div>
+<div class="title">serial::PortNotOpenedException Class Reference</div>  </div>
 </div>
 <div class="contents">
+<!-- doxytag: class="serial::PortNotOpenedException" -->
+<p><code>#include &lt;<a class="el" href="serial_8h_source.html">serial.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserial_1_1_port_not_opened_exception.html#acd2213fae864534eae6a580f74c5ab1b">PortNotOpenedException</a> (const char *description)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserial_1_1_port_not_opened_exception.html#a314c997ecfe3990c4af147b247e8d9ce">what</a> () const   throw ()</td></tr>
+</table>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="acd2213fae864534eae6a580f74c5ab1b"></a><!-- doxytag: member="serial::PortNotOpenedException::PortNotOpenedException" ref="acd2213fae864534eae6a580f74c5ab1b" args="(const char *description)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">serial::PortNotOpenedException::PortNotOpenedException </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>description</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<div class="fragment"><pre class="fragment">{e_what = description;}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a314c997ecfe3990c4af147b247e8d9ce"></a><!-- doxytag: member="serial::PortNotOpenedException::what" ref="a314c997ecfe3990c4af147b247e8d9ce" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* serial::PortNotOpenedException::what </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const  throw ()<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<div class="fragment"><pre class="fragment">                                             {
+    std::stringstream ss;
+    ss &lt;&lt; e_what &lt;&lt; <span class="stringliteral">&quot; called before port was opened.&quot;</span>;
+        <span class="keywordflow">return</span> ss.str().c_str();
+    }
+</pre></div>
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>include/serial/<a class="el" href="serial_8h_source.html">serial.h</a></li>
+</ul>
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
